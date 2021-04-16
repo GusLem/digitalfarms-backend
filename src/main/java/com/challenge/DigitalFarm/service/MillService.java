@@ -19,8 +19,7 @@ public class MillService {
         return millRepo.findAll();
     }
 
-    public Mill add(/*MillDTO millDTO*/Mill mill) {
-        //Mill mill = millMapper.toEntity(millDTO);
+    public Mill add(Mill mill) {
         return millRepo.save(mill);
     }
 

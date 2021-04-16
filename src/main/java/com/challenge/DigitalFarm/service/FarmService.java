@@ -19,8 +19,7 @@ public class FarmService {
         return farmRepo.findAll();
     }
 
-    public Farm add(Farm farm/*FarmDTO farmDTO*/) {
-        //Farm farm = farmMapper.toEntity(farmDTO);
+    public Farm add(Farm farm) {
         return farmRepo.save(farm);
     }
 

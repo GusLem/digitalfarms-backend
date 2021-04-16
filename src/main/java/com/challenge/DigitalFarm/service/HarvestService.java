@@ -19,8 +19,7 @@ public class HarvestService {
         return harvestRepo.findAll();
     }
 
-    public Harvest add(Harvest harvest/*HarvestDTO harvestDTO*/) {
-        //Harvest harvest = harvestMapper.toEntity(harvestDTO);
+    public Harvest add(Harvest harvest) {
         return harvestRepo.save(harvest);
     }
 

@@ -24,8 +24,8 @@ public class FieldResource {
     }
 
     @PostMapping
-    public ResponseEntity<Field> addField(@RequestBody /*FieldDTO fieldDTO*/ Field field) {
-        Field newField = fieldService.add(field/*DTO*/);
+    public ResponseEntity<Field> addField(@RequestBody Field field) {
+        Field newField = fieldService.add(field);
         return new ResponseEntity<>(newField,HttpStatus.CREATED);
     }
 
